@@ -32,21 +32,23 @@ video {
 }
 
 #canvasContainer {
-   width: 100%;
-   text-align:center;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
 }
 
 canvas {
     width: 50%;
-   display: inline;
-   text-align:center;
+    display: inline;
+    text-align: center;
 }
+
 /* canvas {
     display: block;
     margin: 0 10%; */
-    /* text-align: center; */
-    /* width: 30%; */
-    /* max-width: 100px; */
+/* text-align: center; */
+/* width: 30%; */
+/* max-width: 100px; */
 /* } */
 
 /* video, canvas {
