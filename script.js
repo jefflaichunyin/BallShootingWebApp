@@ -124,9 +124,9 @@ function freezeFrame() {
 
 startButton.addEventListener('click', () => {
 	startButton.style.display = 'none';
-	shootButton.style.display = 'block';
 	// shootButton.classList.remove("hidden");
 	success_tone.play().catch(() => { }); // Prime the audio
+	fail_tone.play().catch(() => { }); // Prime the audio
 	//   success_tone.mute = false; // Mute the success tone initially
 	startDetection();
 });
@@ -135,6 +135,8 @@ function startDetection() {
 	navigator.mediaDevices.getUserMedia({ video: { facingMode: 'environment' } })
 		.then(stream => {
 			video.srcObject = stream;
+			// shootButton.style.display = 'block';
+
 			// setInterval(detectRedBall, 300);
 		})
 		.catch(err => {
@@ -184,4 +186,8 @@ shootButton.addEventListener('touchend', (e) => {
 shootButton.addEventListener('touchcancel', (e) => {
 	e.preventDefault();
 	resetCountdown();
+});
+
+video.addEventListener('playing', () => {
+	shootButton.style.display = 'block';
 });
