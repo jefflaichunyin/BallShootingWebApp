@@ -1,0 +1,77 @@
+body {
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+h1,
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+#startButton {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+video {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    /* position: relative;
+    display: inline-block; */
+}
+
+/* video, canvas {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+canvas {
+    pointer-events: none;
+    z-index: 10;
+} */
+
+#message {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: green;
+    font-weight: bold;
+}
+
+#shootButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+}
+
+#countdown {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 10px;
+    color: red;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#shootButton {
+    display: none;
+}
